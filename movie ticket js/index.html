@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ticket Management System</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+<div class="background-img">
+<div class="ticket-section">
+    <form id="ticket-form">
+        <h2>Ticket Management System</h2>
+        <input type="text" id="name" placeholder="Name" required><br>
+        <input type="text" id="name" placeholder="Age" required><br>
+        <input type="text" id="seat" placeholder="Seat No" required><br>
+        <input type="date" id="date" required><br>
+        <input type="text" id="from" placeholder="From Location" required><br>
+        <input type="text" id="to" placeholder="To Location" required><br>
+        <input type="submit" value="Book Ticket">
+        <input type="submit" value="Standard price: $12">
+        <input type="submit" value="Matinee show (before 5 PM) → 20% discount">
+        <input type="submit" value="Senior citizens (above 60) → 30% discount">
+        <input type="submit" value="Children (below 12) → 40% discount">
+    </form>
+    <button id="view-history-btn">View History</button>
+</div>
+</div>
+<div id="ticket-history" style="display:Sanam teri kasam show;">
+    <h3>Ticket History</h3>
+    <table id="history-table">
+        <thead>
+            <tr>
+                <th>Ticket ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Seat No</th>
+                <th>Date</th>
+                <th>From Location</th>
+                <th>To Location</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="history-table-body">
+            <!-- Ticket history rows will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
