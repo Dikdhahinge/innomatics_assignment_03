@@ -1,38 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Job Application Filter -->
+<section class="containers" >
+    <h1>Job Application Filter</h1>
+    <form action="" class="forms">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JSTACK - Search Jobs</title>
-        <link rel="stylesheet" href="style.css">
+        <label class="lables" for="jobAge">Enter Age:</label>
+        <input class="inputFeilds" type="number" id="jobAge" placeholder="Enter age"><br> 
 
-    </head>
+        <label class="lables" for="experience">Enter Experience:</label>
+        <input class="inputFeilds" type="number" id="experience" placeholder="Enter your experience "><br>
+     
+        <label class="lables" for="qualification">Qualification:</label>
+        <select class="inputFeilds" id="qualification">
+          <option value="SSC">SSC</option>
+          <option value="HSC">HSC</option>
+          <option value="Bachelor's Degree">Bachelor's Degree</option>
+          <option value="Master's Degree">Masters's Degree</option>
+        </select><br> 
 
-    <body>
-
-        <!-- Header  Section-->
-
-
-        <!-- Hero  Section-->
-
-
-        <!-- Features  Section-->
-
-
-        <!-- Job Listing  Section-->
-
-
-        <!-- Brand  Section-->
-
-
-        <!-- Team  Section-->
-
-
-        <!-- Footer  Section-->
-
-
-        <script src="toggle.js"></script>
-    </body>
-
-</html>
+    <button type="button" id="check" class="button">Check Eligibility</button>
+    </form>
+    <div id="result6" class="result"></div>
+</section>
